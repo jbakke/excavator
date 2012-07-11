@@ -1,1 +1,5 @@
 The purpose of this repo is to store code in a place where changes won't affect the sandbox server (important when the code contains bugs but I still want to share it) and where changes will be tracked.
+
+Not all files are tracked; only files that I might have a reason to change are tracked. This essentially excludes Sencha's sdk files and css, images, etc. that are the same for every Sencha app.
+
+In testing, it is assumed that the data server with which Sencha communicates is hosted on port 8000 of the same computer, so from Sencha it can be accessed at 'http://'+document.location.hostname+':8000'.
