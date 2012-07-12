@@ -5,7 +5,7 @@ Ext.application({
         'Ext.MessageBox'
     ],
 
-    views: ['Main'],
+    profiles: ['Phone', 'Tablet'],
 
     icon: {
         '57': 'resources/icons/Icon.png',
@@ -23,14 +23,6 @@ Ext.application({
         '748x1024': 'resources/startup/748x1024.png',
         '1536x2008': 'resources/startup/1536x2008.png',
         '1496x2048': 'resources/startup/1496x2048.png'
-    },
-
-    launch: function() {
-        // Destroy the #appLoadingIndicator element
-        Ext.fly('appLoadingIndicator').destroy();
-
-        // Initialize the main view
-        Ext.Viewport.add(Ext.create('excavator.view.Main'));
     },
 
     onUpdated: function() {
