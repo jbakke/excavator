@@ -2,7 +2,8 @@ Ext.application({
     name: 'excavator',
 
     requires: [
-        'Ext.MessageBox'
+        'Ext.MessageBox',
+        'excavator.Ballot'
     ],
 
     profiles: ['Phone', 'Tablet'],
@@ -35,5 +36,9 @@ Ext.application({
                 }
             }
         );
-    }
+    },
+    
+    launch: function() {
+		this.ballot = Ext.create('excavator.Ballot', this)
+	}
 });

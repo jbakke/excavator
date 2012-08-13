@@ -7,7 +7,7 @@ Ext.define('excavator.profile.Tablet', {
 	},
 	
 	isActive: function() {
-		return Ext.os.is.Tablet;
+		return (Ext.os.is.Tablet || Ext.os.is.Desktop);
 	},
 	
 	launch: function() {
